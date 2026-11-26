@@ -1,0 +1,120 @@
+.card {
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.cardPlan {
+  border-top: 3px solid var(--text-muted);
+}
+
+.cardFact {
+  border-top: 3px solid var(--chart-blue);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--text-body-sm-size);
+  font-weight: var(--text-h6-weight);
+  color: var(--text-muted);
+}
+
+.trend {
+  display: grid;
+  place-items: center;
+}
+
+.trendUp {
+  color: var(--status-success);
+}
+
+.trendDown {
+  color: var(--status-critical);
+}
+
+.trendNeutral {
+  color: var(--text-muted);
+}
+
+.value {
+  margin: 0;
+  font-size: 1.1875rem;
+  font-weight: var(--text-kpi-weight);
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.valuePlan {
+  color: var(--text-secondary);
+}
+
+.valueFact {
+  color: var(--chart-blue);
+}
+
+.delta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-body-sm-size);
+}
+
+.deltaPart {
+  font-weight: var(--text-h6-weight);
+}
+
+.deltaUp {
+  color: var(--status-success);
+}
+
+.deltaDown {
+  color: var(--status-critical);
+}
+
+.deltaNeutral {
+  color: var(--text-muted);
+}
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.skelValue {
+  height: 28px;
+  width: 75%;
+}
+
+.skelDelta {
+  height: 14px;
+  width: 40%;
+}
+
+.stateMessage {
+  margin: 0;
+  min-height: calc(1.1875rem * 1.2);
+  display: flex;
+  align-items: center;
+  font-size: var(--text-body-sm-size);
+  line-height: 1.2;
+  color: var(--text-muted);
+}
+
+.stateError {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1) var(--space-2);
+}

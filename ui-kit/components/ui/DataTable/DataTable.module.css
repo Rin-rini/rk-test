@@ -1,0 +1,91 @@
+.wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-body-sm-size);
+}
+
+.table thead {
+  background: var(--bg-panel);
+}
+
+.wrapScrollable {
+  max-height: var(--table-scroll-max);
+  overflow-y: auto;
+}
+
+.wrapScrollable .table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--bg-panel);
+  box-shadow: 0 1px 0 var(--border-muted);
+}
+
+.table th,
+.table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border-muted);
+  text-align: left;
+  color: var(--text-primary);
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.thLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.thFiltered {
+  box-shadow: inset 0 -2px 0 var(--brand-400);
+}
+
+.thButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--text-secondary);
+  font: inherit;
+  font-weight: var(--text-h6-weight);
+  cursor: default;
+}
+
+.thSortable {
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.thSortable:hover {
+  color: var(--brand-300);
+}
+
+.skelCell {
+  height: 14px;
+  width: 100%;
+}
+
+.stateCell {
+  padding: 0;
+  border: none;
+}
+
+.noMatches {
+  margin: var(--space-6) 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--text-body-sm-size);
+}

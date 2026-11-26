@@ -1,0 +1,11 @@
+
+:root {
+  --table-scroll-max: 30rem;
+  --chart-plot-max: 20rem;
+  --filter-sidebar-width: 13.75rem;
+  --scrollbar-size: 8px;
+  --scrollbar-thumb: var(--border-default);
+  --scrollbar-track: transparent;
+  --control-height-sm: 30px;
+  --filter-field-min: 11.5rem;
+}

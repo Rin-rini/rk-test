@@ -1,0 +1,85 @@
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--space-2);
+  margin: 0;
+  padding: var(--space-1) 0;
+  list-style: none;
+  width: max-content;
+  max-width: 100%;
+}
+
+.entry {
+  flex: none;
+}
+
+.item,
+.itemStatic {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: var(--text-body-sm-size);
+  white-space: nowrap;
+}
+
+.item {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: var(--bg-hover);
+}
+
+.itemStatic {
+  background: transparent;
+}
+
+.muted {
+  opacity: 0.45;
+}
+
+.muted .label {
+  text-decoration: line-through;
+}
+
+.swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-sm);
+  flex: none;
+}
+
+.label {
+  color: var(--text-secondary);
+}
+
+.listVertical {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  gap: var(--space-1);
+}
+
+.listVertical .entry {
+  width: 100%;
+}
+
+.listVertical .item,
+.listVertical .itemStatic {
+  width: 100%;
+  justify-content: flex-start;
+  white-space: normal;
+  text-align: left;
+}
+
+.listVertical .label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

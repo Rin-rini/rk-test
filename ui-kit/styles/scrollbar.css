@@ -1,0 +1,30 @@
+/* Единый вид полос прокрутки для всех scrollable-областей (таблицы, селекты, графики). */
+.kit-scrollbar,
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+.kit-scrollbar::-webkit-scrollbar,
+:root *::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+.kit-scrollbar::-webkit-scrollbar-track,
+:root *::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: var(--radius-sm);
+}
+
+.kit-scrollbar::-webkit-scrollbar-thumb,
+:root *::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--bg-card);
+}
+
+.kit-scrollbar::-webkit-scrollbar-thumb:hover,
+:root *::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

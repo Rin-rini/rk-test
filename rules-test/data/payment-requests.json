@@ -1,0 +1,884 @@
+{
+  "meta": {
+    "generatedAt": "2026-11-26T14:54:06.394Z",
+    "currency": "RUB",
+    "referenceToday": "2025-11-26",
+    "dateRange": {
+      "from": "2025-09-01",
+      "to": "2025-12-15"
+    },
+    "rowCount": 76
+  },
+  "counterparties": [
+    {
+      "value": "cp-01",
+      "label": "ООО «Альфа-М»"
+    },
+    {
+      "value": "cp-02",
+      "label": "ПАО «Регионэнерго»"
+    },
+    {
+      "value": "cp-03",
+      "label": "АО «Вектор Пром»"
+    },
+    {
+      "value": "cp-04",
+      "label": "ООО «ТехноСнаб»"
+    },
+    {
+      "value": "cp-05",
+      "label": "ИП Козлов Д.В."
+    },
+    {
+      "value": "cp-06",
+      "label": "ООО «Северная логистика»"
+    },
+    {
+      "value": "cp-07",
+      "label": "АО «СтройМонтаж»"
+    },
+    {
+      "value": "cp-08",
+      "label": "ООО «ОфисПлюс»"
+    }
+  ],
+  "rows": [
+    {
+      "id": "req-001",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 58763,
+      "status": "draft",
+      "basisType": "contract",
+      "basis": "Договор №1/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-09-02"
+    },
+    {
+      "id": "req-002",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 72526,
+      "status": "draft",
+      "basisType": "contract",
+      "basis": "Договор №2/2025",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-09-03"
+    },
+    {
+      "id": "req-003",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 86289,
+      "status": "draft",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0003",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-09-07"
+    },
+    {
+      "id": "req-004",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 100052,
+      "status": "draft",
+      "basisType": "contract",
+      "basis": "Договор №4/2025",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-09-08"
+    },
+    {
+      "id": "req-005",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 113815,
+      "status": "draft",
+      "basisType": "contract",
+      "basis": "Договор №5/2025",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-09-07"
+    },
+    {
+      "id": "req-006",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 127578,
+      "status": "draft",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0006",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-09-08"
+    },
+    {
+      "id": "req-007",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 141341,
+      "status": "draft",
+      "basisType": "contract",
+      "basis": "Договор №7/2025",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-09-12"
+    },
+    {
+      "id": "req-008",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 155104,
+      "status": "pending_approval",
+      "basisType": "contract",
+      "basis": "Договор №8/2025",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-09-13"
+    },
+    {
+      "id": "req-009",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 168867,
+      "status": "pending_approval",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0009",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-09-17"
+    },
+    {
+      "id": "req-010",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 182630,
+      "status": "pending_approval",
+      "basisType": "contract",
+      "basis": "Договор №10/2025",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-09-13"
+    },
+    {
+      "id": "req-011",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 196393,
+      "status": "pending_approval",
+      "basisType": "contract",
+      "basis": "Договор №11/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-09-17"
+    },
+    {
+      "id": "req-012",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 210156,
+      "status": "pending_approval",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0012",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-09-18"
+    },
+    {
+      "id": "req-013",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 223919,
+      "status": "pending_approval",
+      "basisType": "contract",
+      "basis": "Договор №13/2025",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-09-22"
+    },
+    {
+      "id": "req-014",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 237682,
+      "status": "pending_approval",
+      "basisType": "contract",
+      "basis": "Договор №14/2025",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-09-23"
+    },
+    {
+      "id": "req-015",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 251445,
+      "status": "pending_approval",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0015",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-09-22"
+    },
+    {
+      "id": "req-016",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 265208,
+      "status": "pending_approval",
+      "basisType": "contract",
+      "basis": "Договор №16/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-09-23"
+    },
+    {
+      "id": "req-017",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 278971,
+      "status": "pending_approval",
+      "basisType": "contract",
+      "basis": "Договор №17/2025",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-09-27"
+    },
+    {
+      "id": "req-018",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 292734,
+      "status": "pending_approval",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0018",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-09-28"
+    },
+    {
+      "id": "req-019",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 306497,
+      "status": "pending_approval",
+      "basisType": "contract",
+      "basis": "Договор №19/2025",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-10-02"
+    },
+    {
+      "id": "req-020",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 320260,
+      "status": "pending_approval",
+      "basisType": "contract",
+      "basis": "Договор №20/2025",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-09-28"
+    },
+    {
+      "id": "req-021",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 334023,
+      "status": "pending_approval",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0021",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-10-02"
+    },
+    {
+      "id": "req-022",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 347786,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №22/2025",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-10-03"
+    },
+    {
+      "id": "req-023",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 361549,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №23/2025",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-10-07"
+    },
+    {
+      "id": "req-024",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 375312,
+      "status": "approved",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0024",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-10-08"
+    },
+    {
+      "id": "req-025",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 389075,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №25/2025",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-10-07"
+    },
+    {
+      "id": "req-026",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 402838,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №26/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-10-08"
+    },
+    {
+      "id": "req-027",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 416601,
+      "status": "approved",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0027",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-10-12"
+    },
+    {
+      "id": "req-028",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 430364,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №28/2025",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-10-13"
+    },
+    {
+      "id": "req-029",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 444127,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №29/2025",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-10-17"
+    },
+    {
+      "id": "req-030",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 457890,
+      "status": "approved",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0030",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-10-13"
+    },
+    {
+      "id": "req-031",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 471653,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №31/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-10-17"
+    },
+    {
+      "id": "req-032",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 485416,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №32/2025",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-10-18"
+    },
+    {
+      "id": "req-033",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 499179,
+      "status": "approved",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0033",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-10-22"
+    },
+    {
+      "id": "req-034",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 512942,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №34/2025",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-10-23"
+    },
+    {
+      "id": "req-035",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 526705,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №35/2025",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-10-22"
+    },
+    {
+      "id": "req-036",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 540468,
+      "status": "approved",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0036",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-10-23"
+    },
+    {
+      "id": "req-037",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 554231,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №37/2025",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-10-27"
+    },
+    {
+      "id": "req-038",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 567994,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №38/2025",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-10-28"
+    },
+    {
+      "id": "req-039",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 581757,
+      "status": "approved",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0039",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-11-01"
+    },
+    {
+      "id": "req-040",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 595520,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №40/2025",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-10-28"
+    },
+    {
+      "id": "req-041",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 609283,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №41/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-11-01"
+    },
+    {
+      "id": "req-042",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 623046,
+      "status": "approved",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0042",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-11-02"
+    },
+    {
+      "id": "req-043",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 636809,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №43/2025",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-11-06"
+    },
+    {
+      "id": "req-044",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 650572,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №44/2025",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-11-07"
+    },
+    {
+      "id": "req-045",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 664335,
+      "status": "paid",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0045",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-11-06"
+    },
+    {
+      "id": "req-046",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 678098,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №46/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-11-07"
+    },
+    {
+      "id": "req-047",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 691861,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №47/2025",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-11-11"
+    },
+    {
+      "id": "req-048",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 705624,
+      "status": "paid",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0048",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-11-12"
+    },
+    {
+      "id": "req-049",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 719387,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №49/2025",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-11-16"
+    },
+    {
+      "id": "req-050",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 733150,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №50/2025",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-11-12"
+    },
+    {
+      "id": "req-051",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 746913,
+      "status": "paid",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0051",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-11-16"
+    },
+    {
+      "id": "req-052",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 760676,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №52/2025",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-11-17"
+    },
+    {
+      "id": "req-053",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 774439,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №53/2025",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-11-21"
+    },
+    {
+      "id": "req-054",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 788202,
+      "status": "paid",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0054",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-11-22"
+    },
+    {
+      "id": "req-055",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 801965,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №55/2025",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-11-21"
+    },
+    {
+      "id": "req-056",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 815728,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №56/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-11-22"
+    },
+    {
+      "id": "req-057",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 829491,
+      "status": "paid",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0057",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-11-26"
+    },
+    {
+      "id": "req-058",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 843254,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №58/2025",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-11-27"
+    },
+    {
+      "id": "req-059",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 857017,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №59/2025",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-12-01"
+    },
+    {
+      "id": "req-060",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 870780,
+      "status": "paid",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0060",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-11-27"
+    },
+    {
+      "id": "req-061",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 884543,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №61/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-12-01"
+    },
+    {
+      "id": "req-062",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 898306,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №62/2025",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-12-02"
+    },
+    {
+      "id": "req-063",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 912069,
+      "status": "paid",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0063",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-12-06"
+    },
+    {
+      "id": "req-064",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 925832,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №64/2025",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-12-07"
+    },
+    {
+      "id": "req-065",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 49595,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №65/2025",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-12-06"
+    },
+    {
+      "id": "req-066",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 63358,
+      "status": "paid",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0066",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-12-07"
+    },
+    {
+      "id": "req-067",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 77121,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №67/2025",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-12-11"
+    },
+    {
+      "id": "req-068",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 90884,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №68/2025",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-12-12"
+    },
+    {
+      "id": "req-069",
+      "counterpartyId": "cp-06",
+      "counterparty": "ООО «Северная логистика»",
+      "amount": 104647,
+      "status": "paid",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0069",
+      "initiator": "Кузнецова О.Л.",
+      "paymentDate": "2025-12-16"
+    },
+    {
+      "id": "req-070",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 118410,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №70/2025",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-12-12"
+    },
+    {
+      "id": "req-071",
+      "counterpartyId": "cp-08",
+      "counterparty": "ООО «ОфисПлюс»",
+      "amount": 132173,
+      "status": "paid",
+      "basisType": "contract",
+      "basis": "Договор №71/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-12-16"
+    },
+    {
+      "id": "req-072",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 145936,
+      "status": "rejected",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-0072",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-12-17"
+    },
+    {
+      "id": "req-today-1",
+      "counterpartyId": "cp-01",
+      "counterparty": "ООО «Альфа-М»",
+      "amount": 320000,
+      "status": "approved",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-9912",
+      "initiator": "Иванова А.С.",
+      "paymentDate": "2025-11-26"
+    },
+    {
+      "id": "req-today-2",
+      "counterpartyId": "cp-04",
+      "counterparty": "ООО «ТехноСнаб»",
+      "amount": 185500,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №88/2025",
+      "initiator": "Петров К.И.",
+      "paymentDate": "2025-11-26"
+    },
+    {
+      "id": "req-over-1",
+      "counterpartyId": "cp-02",
+      "counterparty": "ПАО «Регионэнерго»",
+      "amount": 410000,
+      "status": "approved",
+      "basisType": "invoice",
+      "basis": "Счёт №СЧ-7701",
+      "initiator": "Сидорова Е.М.",
+      "paymentDate": "2025-11-20"
+    },
+    {
+      "id": "req-over-2",
+      "counterpartyId": "cp-07",
+      "counterparty": "АО «СтройМонтаж»",
+      "amount": 275000,
+      "status": "approved",
+      "basisType": "contract",
+      "basis": "Договор №15/2025",
+      "initiator": "Николаев П.А.",
+      "paymentDate": "2025-11-18"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+:root {
+--brand-50:  #f0eafb;
+--brand-100: #ddcff6;
+--brand-200: #c2a9ee;
+--brand-300: #a683e4;
+--brand-400: #8f66d8;
+--brand-500: #7a4fc4;
+--brand-600: #653fa5;
+--brand-700: #533484;
+--brand-800: #452c6b;
+--brand-900: #3a2657;
+--brand-950: #231736;
+
+--bg-app:    #100e18;
+--bg-panel:  #191524;
+--bg-card:   #1f1a2e;
+--bg-hover:  #292338;
+
+--text-primary:   #f1edf9;
+--text-secondary: #cdc4dc;
+--text-muted:     #938aa3;
+
+--border-default: #2e2740;
+--border-muted:   #241f34;
+
+--chart-blue:   #8cb0ea;
+--chart-green:  #86ccb0;
+--chart-orange: #e6bb86;
+--chart-purple: #b49ae8;
+--chart-teal:   #6bc2ce;
+
+--status-success:  #6ec9a6;
+--status-warning:  #deb878;
+--status-critical: #e59a9a;
+
+--on-brand: #f8f6fd;
+}

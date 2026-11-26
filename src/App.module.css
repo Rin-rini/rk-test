@@ -1,0 +1,122 @@
+.page {
+  width: min(100% - var(--grid-margin) * 2, var(--grid-container));
+  margin: 0 auto;
+  padding: var(--space-8) 0 var(--space-10);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--brand-500);
+  color: var(--on-brand);
+  flex: none;
+}
+
+h1 {
+  margin: 0 0 var(--space-1);
+  font-size: var(--text-h1-size);
+  font-weight: var(--text-h1-weight);
+  line-height: var(--text-h1-leading);
+}
+
+.lead {
+  margin: 0;
+  max-width: 62ch;
+  color: var(--text-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--grid-gutter);
+}
+
+.card {
+  padding: var(--space-5);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.card h2 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-h4-size);
+  font-weight: var(--text-h4-weight);
+  line-height: var(--text-h4-leading);
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.panel {
+  margin-top: var(--space-4);
+  padding: var(--space-5);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+}
+
+.panel h2 {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-h4-size);
+  font-weight: var(--text-h4-weight);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin: 0;
+}
+
+.figures div {
+  min-width: 160px;
+}
+
+.figures dt {
+  color: var(--text-muted);
+  font-size: var(--text-body-sm-size);
+}
+
+.figures dd {
+  margin: var(--space-1) 0 0;
+  font-size: var(--text-kpi-size);
+  font-weight: var(--text-kpi-weight);
+  line-height: var(--text-kpi-leading);
+  font-variant-numeric: var(--font-variant-tabular);
+}
+
+.negative {
+  color: var(--status-critical);
+}
+
+.chart {
+  height: 120px;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

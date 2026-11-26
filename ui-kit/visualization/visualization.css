@@ -1,0 +1,5 @@
+/* Правила отображения метрик — подключаются глобально через tokens/index или src/index.css */
+
+.viz-numeric {
+  font-variant-numeric: var(--font-variant-tabular);
+}

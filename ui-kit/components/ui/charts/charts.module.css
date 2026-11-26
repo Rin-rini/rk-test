@@ -1,0 +1,74 @@
+.chartRoot :global(.recharts-wrapper),
+.chartRoot :global(.recharts-surface),
+.chartRoot :global(.recharts-wrapper *:focus) {
+  outline: none;
+}
+
+.lineChartStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 0;
+  width: 100%;
+}
+
+.legendScroller {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-top: 1px solid var(--border-muted);
+  padding-top: var(--space-1);
+  scrollbar-gutter: stable;
+}
+
+.pieWithLegend {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: var(--space-3);
+  min-width: 0;
+  width: 100%;
+}
+
+.pieSolo {
+  display: block;
+}
+
+.piePlot {
+  flex: 1 1 52%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.pieSolo .piePlot {
+  width: 100%;
+}
+
+.pieLegendAside {
+  flex: 0 1 48%;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.drillNav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 1.5rem;
+}
+
+.drillContext {
+  font-size: var(--text-body-sm-size);
+  font-weight: var(--text-h6-weight);
+  color: var(--text-secondary);
+}
+
+.drillHint {
+  font-size: var(--text-body-sm-size);
+  color: var(--text-muted);
+}

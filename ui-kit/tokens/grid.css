@@ -1,0 +1,11 @@
+/*
+  Сетка дашбордов:
+  — 12 колонок;
+  — гаттер между колонками 24px (--space-6).
+*/
+:root {
+  --grid-columns: 12;
+  --grid-container: 1440px;
+  --grid-gutter: var(--space-6);
+  --grid-margin: var(--space-4);
+}

@@ -1,0 +1,54 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.header {
+  padding: var(--space-3) var(--space-4) var(--space-1);
+  flex: none;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--text-h4-size);
+  font-weight: var(--text-h4-weight);
+  color: var(--text-primary);
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: 0 var(--space-4) var(--space-3);
+  min-height: 0;
+  min-width: 0;
+}
+
+.plotArea {
+  flex: none;
+  min-height: 0;
+  max-height: var(--chart-plot-max);
+  min-width: 0;
+  padding-bottom: var(--space-1);
+}
+
+.footer {
+  flex: none;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--border-muted);
+}
+
+.chartSkel {
+  width: 100%;
+  height: var(--chart-plot-max);
+}

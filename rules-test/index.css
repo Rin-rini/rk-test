@@ -1,0 +1,34 @@
+@import "../ui-kit/tokens/index.css";
+@import "../ui-kit/visualization/visualization.css";
+@import "../ui-kit/styles/scrollbar.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-size);
+  font-weight: var(--text-body-weight);
+  line-height: var(--text-body-leading);
+  color: var(--text-primary);
+  background: var(--bg-app);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.recharts-wrapper:focus,
+.recharts-wrapper:focus-visible,
+.recharts-surface:focus,
+.recharts-layer:focus,
+.recharts-wrapper *:focus {
+  outline: none;
+}

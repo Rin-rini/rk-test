@@ -1,0 +1,111 @@
+:root {
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+
+  /* Заголовки */
+  --text-h1-size: 2rem;
+  --text-h1-weight: 600;
+  --text-h1-leading: 1.25;
+
+  --text-h2-size: 1.5rem;
+  --text-h2-weight: 600;
+  --text-h2-leading: 1.3;
+
+  --text-h3-size: 1.125rem;
+  --text-h3-weight: 600;
+  --text-h3-leading: 1.35;
+
+  --text-h4-size: 1rem;
+  --text-h4-weight: 600;
+  --text-h4-leading: 1.4;
+
+  --text-h5-size: 0.9375rem;
+  --text-h5-weight: 600;
+  --text-h5-leading: 1.45;
+
+  --text-h6-size: 0.875rem;
+  --text-h6-weight: 600;
+  --text-h6-leading: 1.45;
+
+  /* Основной текст */
+  --text-body-size: 0.9375rem;
+  --text-body-weight: 400;
+  --text-body-leading: 1.5;
+
+  --text-body-sm-size: 0.8125rem;
+  --text-body-sm-weight: 400;
+  --text-body-sm-leading: 1.45;
+
+  --text-caption-size: 0.75rem;
+  --text-caption-weight: 500;
+  --text-caption-leading: 1.4;
+
+  /* Крупные числа в KPI и таблицах */
+  --text-kpi-size: 1.375rem;
+  --text-kpi-weight: 600;
+  --text-kpi-leading: 1.2;
+
+  --text-kpi-lg-size: 1.5rem;
+  --text-kpi-lg-weight: 600;
+  --text-kpi-lg-leading: 1.15;
+
+  --font-variant-tabular: tabular-nums;
+}
+
+/* Типографические роли (используют только переменные выше) */
+.typ-h1 {
+  font-family: var(--font-sans);
+  font-size: var(--text-h1-size);
+  font-weight: var(--text-h1-weight);
+  line-height: var(--text-h1-leading);
+  color: var(--text-primary);
+}
+
+.typ-h2 {
+  font-family: var(--font-sans);
+  font-size: var(--text-h2-size);
+  font-weight: var(--text-h2-weight);
+  line-height: var(--text-h2-leading);
+  color: var(--text-primary);
+}
+
+.typ-h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-h3-size);
+  font-weight: var(--text-h3-weight);
+  line-height: var(--text-h3-leading);
+  color: var(--text-primary);
+}
+
+.typ-body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-size);
+  font-weight: var(--text-body-weight);
+  line-height: var(--text-body-leading);
+  color: var(--text-primary);
+}
+
+.typ-body-sm {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm-size);
+  font-weight: var(--text-body-sm-weight);
+  line-height: var(--text-body-sm-leading);
+  color: var(--text-secondary);
+}
+
+.typ-kpi {
+  font-family: var(--font-sans);
+  font-size: var(--text-kpi-size);
+  font-weight: var(--text-kpi-weight);
+  line-height: var(--text-kpi-leading);
+  font-variant-numeric: var(--font-variant-tabular);
+  color: var(--text-primary);
+}
+
+.typ-kpi-lg {
+  font-family: var(--font-sans);
+  font-size: var(--text-kpi-lg-size);
+  font-weight: var(--text-kpi-lg-weight);
+  line-height: var(--text-kpi-lg-leading);
+  font-variant-numeric: var(--font-variant-tabular);
+  color: var(--text-primary);
+}
