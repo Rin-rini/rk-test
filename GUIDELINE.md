@@ -91,27 +91,34 @@ import { DashboardPage, DashboardPageHeader, dashboardGrid } from '@ui-kit/layou
 
 Вся логика в `ui-kit/visualization`. В экране **не пишите свои** `toLocaleString` / «млн ₽» вручную.
 
-| Формат | Где применять | Пример |
+Все подписи идут через `formatByMetric(value, format, options)`. Локаль `ru-RU`. `null` везде рисуется как «—».
+
+| Формат | Что получает | Как выглядит |
 | --- | --- | --- |
-| `text` | названия, коды | «Финансы» |
-| `number` | счётчики | `1 234,5` |
-| `currency` | полные суммы в таблицах и тултипах; в KPI — см. `formatCurrencyKpi` | `12 000 000 ₽` |
-| `currencyCompact` | **оси графиков**, узкие места | `12 млн ₽`, `1,4 млрд ₽` |
-| `percent` | доля 0…1 в данных | `0.083` → «8,3 %» |
+| `text` | строка (число — как `number`) | «Финансы» |
+| `number` | число | до 2 знаков: `1 234,5` |
+| `percent` | доля от 0 до 1 | `0.083` → `8,3 %` |
+| `currency` | сумма | полная, без копеек: `12 000 000 ₽` |
+| `currencyCompact` | сумма | `1,4 млрд ₽`, `12 млн ₽`, `850 тыс. ₽`; меньше тысячи — как полная сумма |
 
-- `formatByMetric(value, format, { currency: 'USD' })` — вывод в UI; валюта: `RUB` (по умолчанию), `USD`, `EUR`.
-- `formatCurrencyKpi` — в **KPICard** автоматически для `unit="currency"`: ≥ млн / млрд с одной цифрой после запятой (`1,4 млрд ₽`).
-- На карточке: проп `currency="USD"` при `unit="currency"`.
-- `metricDisplayClass(format)` — для колонок с цифрами (tabular digits).
-- `null` → «—».
+Валюта — `RUB` (по умолчанию), `USD` или `EUR`: `formatByMetric(value, format, { currency: 'USD' })`. Её можно задать в KPI (`currency`) и в колонке таблицы (`currency` при `format: 'currency' | 'currencyCompact'`).
 
-На осях графиков размерность в каждом тике; в тултипе — полный формат. Это уже заложено в теме графиков (`formatChartAxisTick`).
+Пороги сокращения одни: 1 000, 1 000 000, 1 000 000 000. Миллионы и миллиарды — одна цифра после запятой, тысячи — целое.
+
+Где какой формат уже подставлен:
+
+- **KPI.** При `unit="currency"` карточка сама вызывает `formatCurrencyKpi`: миллионы и миллиарды сокращаются, тысячи и меньше остаются полной суммой (`1 371 877 259 ₽` → `1,4 млрд ₽`). `percent` и `number` идут через `formatByMetric`. Дельта в процентах — тоже доля 0…1. На карточке: `currency="USD"` при `unit="currency"`.
+- **Таблица.** Формат колонки (`format`) и при необходимости `currency`. Числовые форматы получают класс с ровными цифрами (`metricDisplayClass` → `tabular-nums`), чтобы колонки не прыгали.
+- **График, ось.** Один масштаб на всю ось — по максимальному модулю значений (`resolveChartValueScale` / `formatChartAxisTick`). Если максимум в миллиардах, все тики в «млрд», даже маленькие. У тика размерность рядом с числом (`12 млн`), отдельной подписи оси нет. Для рублей меньше тысячи тик — целое с `₽`. Для процентов ось умножает долю на 100.
+- **График, тултип.** То же `valueFormat`, но уже полным `formatByMetric`: для `currency` и `currencyCompact` со знаком валюты.
 
 ---
 
 ## Какой график выбрать
 
 Импорт нужного компонента — из `@ui-kit/components/ui/index.ts` (блок `charts`).
+
+График кладётся внутрь `ChartCard`. Данные готовит экран: массив объектов или шаги. Компонент только рисует.
 
 | Ваша задача | Компонент |
 | --- | --- |
@@ -130,7 +137,26 @@ import { DashboardPage, DashboardPageHeader, dashboardGrid } from '@ui-kit/layou
 - Нет временной оси и мало категорий — столбцы, не линия.
 - Много категорий для pie chart — таблица или столбец.
 - На линейном графике легенда под графиком; много серий — прокрутка внутри карточки.
-- Drill-down по клику — проп `drilldown` у `LineTimeSeriesChart` и `ComboBarLineChart`.
+
+**Общие настройки** у столбцов, линии, combo и waterfall:
+
+- `height` — высота области графика. Ширину задаёт класс сетки на `ChartCard`, не график.
+- `valueFormat` — формат оси и тултипа. У grouped, stacked, combo и waterfall по умолчанию `currencyCompact`; у линии и простого столбца — `number`.
+- `withTooltip` — тултип включён по умолчанию.
+- `legend` — клик по пункту прячет серию. Если передать `onLegendToggle`, скрытие остаётся на экране, kit сам состояние не меняет.
+- Цвет серии необязателен. Без него берётся палитра `--chart-blue`, `--chart-green`, `--chart-orange`, `--chart-purple`, `--chart-teal` по кругу.
+
+**Как передавать данные**
+
+- **`LineTimeSeriesChart`** — динамика. `data`, поле оси `xKey`, массив `series` (`key`, `name`, опционально `color`).
+- **`VerticalBarChart` / `HorizontalBarChart`** — одно значение на категорию: `categoryKey`, `valueKey`, подпись `name`, цвет. Горизонтальный вариант без легенды; длинные подписи регулируются `categoryAxisWidth`.
+- **`HorizontalGroupedBarChart` / `VerticalGroupedBarChart`** — несколько столбцов рядом. Те же `data` и `categoryKey`, плюс `series`. Горизонтальный — план/факт с длинными названиями.
+- **`HorizontalStackedBarChart` / `VerticalStackedBarChart`** — доли в одном столбце, тот же вид `series`.
+- **`ComboBarLineChart`** — столбец и линия: `xKey`, объекты `bar` и `line` (`key`, `name`, `color`). Без цвета столбец — факт (`--chart-blue`), линия — план (`--text-muted`).
+- **`PieChart`** — `slices`: `id`, `label`, `value`, опционально `color`. В легенде рядом с названием доля.
+- **`WaterfallChart`** — цепочка `steps`: `label`, `value`, `kind` (`start` | `delta` | `total`). Старт и итог одним цветом серии, прирост зелёный, снижение красный.
+
+У **line** и **combo** графиков есть один уровень детализации: проп `drilldown`. В нём `drillKey` (поле вроде месяца `YYYY-MM`) и `getDetailData(drillValue, row)`, которая возвращает новый массив точек. Клик по точке оси подменяет данные, сверху появляется «Назад». Второй уровень вложенности kit не делает.
 
 ---
 
